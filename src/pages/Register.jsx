@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import logo from "../../images/icon.png";
-import left from "../../images/angle-left.png";
-import './login.css';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import logo from "../images/icon.png";
+import left from "../images/angle-left.png";
 
 export default function Register() {
   return (
@@ -14,9 +13,9 @@ export default function Register() {
         <div className="container" style={{ background: '#fff', width: '1000px' }}>
           <div className="signup-content" style={{ paddingBottom: '10px', paddingTop: '20px' }} id="signup-content">
             <div className="signup-form">
-              <form action="/Docgia" method="post">
+              <div>
                 <input name="__RequestVerificationToken" type="hidden" />
-                <form method="POST" className="register-form" id="register-form">
+                <div className="register-form" id="register-form">
                   <div className="form-group">
                     <label className='label_input' htmlFor="name"><i className="zmdi zmdi-account material-icons-name"></i></label>
                     <input className="inputlogin text-box single-line" data-val="true" data-val-length="Số ký tự tối đa 200!" data-val-length-max="200" data-val-required="Bạn chưa nhập dữ liệu!" id="Username" name="Username" placeholder="Họ tên" required="required" type="text" value="" />
@@ -42,13 +41,26 @@ export default function Register() {
                     <label htmlFor="agree-term" className="label-agree-term label_input" id="dongy"><span><span></span></span>Tôi đồng ý tất cả <Link className="camket" to="/Docgia/Gioithieu">Cam kết và thỏa thuận</Link></label>
                   </div>
                   <div className="form-group" hidden="hidden">
-                    <input className="form-control text-box single-line" data-val="true" data-val-number="The field Quyền truy cập must be a number." id="quyentruycap" name="quyentruycap" type="number" value="" />
+                    <input
+                    className="form-control text-box single-line"
+                    data-val="true"
+                    data-val-number="The field Quyền truy cập must be a number."
+                    id="quyentruycap"
+                    name="quyentruycap"
+                    type="number"
+                    value="" />
                   </div>
                   <div className="form-group form-button">
-                    <button type="submit" className="form-submit" style={{ border: 'none', marginTop: '0' }} id="btndocgia">Đăng ký</button>
+                    <button
+                    className="form-submit"
+                    style={{ border: 'none', marginTop: '0' }}
+                    id="btndocgia"
+                    >
+                      Đăng ký
+                    </button>
                   </div>
-                </form>
-              </form>
+                </div>
+              </div>
             </div>
             <div className="signup-image">
               <h2 id="dangkydocgia" className="signup-image-link">Đăng ký độc giả</h2>

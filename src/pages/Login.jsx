@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import logo from "../../images/icon.png";
-import left from "../../images/angle-left.png";
-import './login.css'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import logo from "../images/icon.png";
+import left from "../images/angle-left.png";
 
 export default function Login() {
   return (
@@ -25,8 +24,8 @@ export default function Login() {
                                 <figure><img src={logo} alt="sing up image" /></figure>
                                 <Link id="atv" className="signup-image-link" to="/Home/Index" style={{textDecoration: "none", color: "#838793"}}>Thư viện HĐGM Việt Nam</Link>
                                 <p style={{textAlign: "center", color: "blue" , fontWeight: "600" }}>Bạn chưa có tài khoản?</p>
-                                <Link to="/Docgia/Index" className="signup-image-link" style={{fontWeight:"600", paddingBottom:"20px"}}>Tạo một tài khoản</Link>
-                                        <Link to="/Home/Danhmucsach" id="atrove"><img src={left} alt="" /></Link>
+                                <Link to="/register" className="signup-image-link" style={{fontWeight:"600", paddingBottom:"20px"}}>Tạo một tài khoản</Link>
+                                <Link to="/Home/Danhmucsach" id="atrove"><img src={left} alt="" /></Link>
                             </div>
                             <div className="signin-form">                   
                                 <form method="POST" className="register-form" id="login-form">

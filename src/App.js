@@ -1,18 +1,18 @@
-import Author from "./pages/Author";
-import Book from "./pages/Book";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Login from "./pages/Login/Login"
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
+import Author from "./pages/Author";
+import Book from "./pages/Book";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Login from "./pages/Login"
 import Video from "./pages/Video";
 import Chude from "./pages/Chude";
 import ChudeSort from "./pages/SortChude";
 import Detail from "./pages/Detail";
-import Register from "./pages/Login/Register";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
